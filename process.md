@@ -6,4 +6,8 @@
 6. Tested that our command executes
 7. Initialized npm
 8. Installed packages npm i body-parser express request-promise-native string-tokenizer url-regex
-9. 
+9. Created our server.js
+10. Created supporting submodules (slashCommand, handleStatus, commandParser)
+11. Created our express server
+12. Created start script, ran it, express server works
+13. 

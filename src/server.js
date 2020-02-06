@@ -1,5 +1,6 @@
 const Express = require('express')
 const bodyParser = require('body-parser')
+const dotenv = require('dotenv').config()
 
 const app = new Express()
 app.use(bodyParser.urlencoded({extended: true}))
