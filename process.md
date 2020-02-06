@@ -10,4 +10,4 @@
 10. Created supporting submodules (slashCommand, handleStatus, commandParser)
 11. Created our express server
 12. Created start script, ran it, express server works
-13. 
+13. Deployed to heroku, monitored in local cli 
