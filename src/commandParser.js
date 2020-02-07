@@ -2,6 +2,8 @@ const tokenizer = require('string-tokenizer')
 const createUrlRegex = require('url-regex')
 
 const homeResponse = () => {
+    console.log('in homeresponse');
+    
     // post back to slack acknowledging "home"
     return {
         text: 'yay you are home!',
@@ -10,10 +12,14 @@ const homeResponse = () => {
 }
 
 const commandParser = (body) => {
-    console.log('IN COMMAND PARSER')
-    console.log('BODY', body);
     if (body.text.includes('home')) {
         return homeResponse();
+    } else {
+        console.log('did not match anything');
+        return {
+            text: 'nada',
+            attachments: []
+        }
     }
 }
 
