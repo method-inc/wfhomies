@@ -10,4 +10,7 @@
 10. Created supporting submodules (slashCommand, handleStatus, commandParser)
 11. Created our express server
 12. Created start script, ran it, express server works
-13. Deployed to heroku, monitored in local cli 
+13. Deployed to heroku, monitored in local cli using `heroku logs --tail --app wfhomies`
+14. Our express server is correctly logging requests from our slash command!
+15. 
+m 

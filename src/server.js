@@ -2,6 +2,8 @@ const Express = require('express')
 const bodyParser = require('body-parser')
 const dotenv = require('dotenv').config()
 
+const {commandParser} = require('./commandParser');
+
 const app = new Express()
 app.use(bodyParser.urlencoded({extended: true}))
 
@@ -15,8 +17,7 @@ if (!slackToken) {
 const port = PORT || 8080
 
 app.post('/', (req, res) => {
-    console.log('REQUEST', req)
-    console.log('RESPONSE', res)
+    commandParser(req.body)
     console.log('-----------------')
 })
 
