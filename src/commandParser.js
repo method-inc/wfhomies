@@ -6,4 +6,4 @@ const commandParser = (body) => {
     console.log('BODY', body);
 }
 
-module.exports = commandParser;
+module.exports = { commandParser };
