@@ -1,17 +1,16 @@
-const tokenizer = require('string-tokenizer')
-const createUrlRegex = require('url-regex')
+const request = require('./helpers/request').request;
 
 const homeResponse = (body) => {
     console.log('in homeresponse');
     console.log(body.text);
     // post back to slack acknowledging "home"
+    const responseBody = JSON.stringify({ text: 'yay you are home!' });
 
-    fetch(body.response_url, { 
-        method: 'post',
-        body: JSON.stringify({
-            text: 'yay you are home!'
-        })
-  });
+    request(
+        body.response_url,
+        'POST',
+        responseBody
+    );
 }
 
 const commandParser = (body) => {
