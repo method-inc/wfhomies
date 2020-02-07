@@ -17,9 +17,15 @@ if (!slackToken) {
 const port = PORT || 8080
 
 app.post('/', (req, res) => {
-    console.log('RESPONSE', res)
-    return commandParser(req.body)
+    // console.log('RESPONSE', res)
+    // return commandParser(req.body)
     console.log('-----------------')
+    if (req.body.text.includes('home')) {
+        res.json({
+            response_type: 'ephemeral',
+            text: 'yay you are home!'
+        })
+    }
 })
 
 app.listen(port, () => {

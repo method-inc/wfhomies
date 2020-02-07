@@ -4,13 +4,13 @@ const homeResponse = (body) => {
     console.log('in homeresponse');
     console.log(body.text);
     // post back to slack acknowledging "home"
-    const responseBody = JSON.stringify({ text: 'yay you are home!' });
+    const responseBody = JSON.stringify({ text: 'yay you are home!' };
 
-    request(
-        body.response_url,
-        'POST',
-        responseBody
-    );
+    // request(
+    //     body.response_url,
+    //     'POST',
+    //     responseBody
+    // );
 }
 
 const commandParser = (body) => {
