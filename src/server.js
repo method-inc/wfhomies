@@ -17,7 +17,7 @@ if (!slackToken) {
 const port = PORT || 8080
 
 app.post('/', (req, res) => {
-    commandParser(req.body)
+    return commandParser(req.body)
     console.log('-----------------')
 })
 
