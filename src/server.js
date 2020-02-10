@@ -1,33 +1,35 @@
-const Express = require('express')
-const bodyParser = require('body-parser')
-const dotenv = require('dotenv').config()
+const Express = require('express');
+const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
 
-const commandParser = require('./commandParser').commandParser;
+dotenv.config();
 
-const app = new Express()
-app.use(bodyParser.urlencoded({extended: true}))
+// const { commandParser } = require('./commandParser');
 
-const {SLACK_TOKEN: slackToken, PORT} = process.env
+const app = new Express();
+app.use(bodyParser.urlencoded({ extended: true }));
+
+const { SLACK_TOKEN: slackToken, PORT } = process.env;
 
 if (!slackToken) {
-    console.error('missing environment variables SLACK_TOKEN')
-    process.exit(1)
+    console.error('missing environment variables SLACK_TOKEN');
+    process.exit(1);
 }
 
-const port = PORT || 8080
+const port = PORT || 8080;
 
 app.post('/', (req, res) => {
     // console.log('RESPONSE', res)
-    // return commandParser(req.body)
-    console.log('-----------------')
+    // const result = commandParser(req.body);
+
     if (req.body.text.includes('home')) {
         res.json({
             response_type: 'ephemeral',
-            text: 'yay you are home!'
-        })
+            text: 'yay you are home!',
+        });
     }
-})
+});
 
 app.listen(port, () => {
-    console.log(`Server started at localhost:${port}`)
-})
+    console.log(`Server started at localhost:${port}`);
+});

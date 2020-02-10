@@ -1,28 +1,25 @@
-const request = require('./helpers/request').request;
-
 const homeResponse = (body) => {
     console.log('in homeresponse');
     console.log(body.text);
     // post back to slack acknowledging "home"
-    const responseBody = JSON.stringify({ text: 'yay you are home!' });
+    // const responseBody = JSON.stringify({ text: 'yay you are home!' });
 
     // request(
     //     body.response_url,
     //     'POST',
     //     responseBody
     // );
-}
+};
 
 const commandParser = (body) => {
     if (body.text.includes('home')) {
         return homeResponse(body);
-    } else {
-        console.log('did not match anything');
-        return {
-            text: 'nada',
-            attachments: []
-        }
     }
-}
+    console.log('did not match anything');
+    return {
+        text: 'nada',
+        attachments: [],
+    };
+};
 
 module.exports = { commandParser };
