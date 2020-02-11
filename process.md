@@ -17,3 +17,22 @@
 17. Removed extra files, lets modularize as we go
 18. Converted to Typescript!  Use `npm run build:watch` to continually build as you go.  Final build output is now in the `dist/` directory.
 19. Changed eslint to typescript-eslint.  Changed eslint options to reflect that.
+
+TODO
+
+20. ◻️ Pick a database to host data
+21. ◻️ Post to the database
+22. ◻️ Pull from the database
+23. ◻️ Show that data in slackbot
+24. ◻️ Make it pretty
+25. ◻️ Get the Web view working via github pages (placeholder html something something)
+26. ◻️ Build web view to show today's data
+27. ◻️ Scroll through prev days data
+28. ◻️ 
+
+
+
+
+STRETCH
+1. View reports on old data
+2. view averages etc
