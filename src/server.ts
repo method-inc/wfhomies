@@ -26,12 +26,12 @@ app.post('/', (req, res) => {
     if (req.body.text.includes('home')) {
         res.json({
             response_type: 'ephemeral',
-            text: 'I\'ve marked you as working from home. Enjoy your day!',
+            text: ':derelict_house_building: I\'ve marked you as working from home. Enjoy your day!',
         })
     }else if (req.body.text.includes('office')) {
         res.json({
             response_type: 'ephemeral',
-            text: 'I\'ve marked you as working from the office. Have fun!',
+            text: ':office: I\'ve marked you as working from the office. Have fun!',
         });
     }
 });
