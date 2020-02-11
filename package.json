@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prowe214/wfhomies.git"
+    "url": "git+https://github.com/Skookum/wfhomies.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/prowe214/wfhomies/issues"
+    "url": "https://github.com/Skookum/wfhomies/issues"
   },
-  "homepage": "https://github.com/prowe214/wfhomies#readme",
+  "homepage": "https://github.com/Skookum/wfhomies#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
