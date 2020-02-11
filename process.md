@@ -12,5 +12,8 @@
 12. Created start script, ran it, express server works
 13. Deployed to heroku, monitored in local cli using `heroku logs --tail --app wfhomies`
 14. Our express server is correctly logging requests from our slash command!
-15. 
-m 
+15. Return a response to the client (slack) with res.send()
+16. Added eslint to enforce code quality in the editor
+17. Removed extra files, lets modularize as we go
+18. Converted to Typescript!  Use `npm run build:watch` to continually build as you go.  Final build output is now in the `dist/` directory.
+19. Changed eslint to typescript-eslint.  Changed eslint options to reflect that.

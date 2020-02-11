@@ -1,0 +1,41 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2018, // Allows for parsing of modern Ecmascript features
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+    },
+    // Using airbnb typescript base config
+    // https://www.npmjs.com/package/eslint-config-airbnb-typescript
+    "extends": ["airbnb-typescript/base"],
+    "rules": {
+        // This is where we specify ESLint rules.
+        // These override the extended configs
+        "no-console": "off",
+        "no-plusplus": "off",
+        "indent": ["off"],
+        "@typescript-eslint/indent": ["error", 4],
+        "import/prefer-default-export": 0,
+        "prefer-destructuring": ["error", {
+            "array": false, // array destructuring is difficult to read with negligible benefit
+            "object": true
+        }]
+    },
+    "overrides": [
+        // Specify specific overrides
+        {
+            "files": ["*.js"],
+            "rules": {
+                // Overrides a typescript-eslint specific issue
+                "@typescript-eslint/explicit-function-return-type": "off",
+                // Overrides a typescript-eslint specific issue
+                "@typescript-eslint/no-var-requires": 0
+            }
+        }
+    ]
+}

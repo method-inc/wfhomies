@@ -1,4 +1,5 @@
-const Express = require('express');
+import express from 'express';
+
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 
@@ -6,7 +7,7 @@ dotenv.config();
 
 // const { commandParser } = require('./commandParser');
 
-const app = new Express();
+const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const { SLACK_TOKEN: slackToken, PORT } = process.env;
