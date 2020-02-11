@@ -1,6 +1,6 @@
 
 
-##Design Plan
+## Design Plan
 
 >🎨 Product Diagram -> [Whimsical](https://whimsical.com/MtX5p4CFbW7UZLYPX79Ysw)
 
@@ -11,5 +11,5 @@ posts to a db
 slash for polling that db and getting the results for the day
 `/wf everyone`
 
-###stretch
+### stretch
 web ui for today's results
