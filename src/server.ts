@@ -20,7 +20,7 @@ if (!slackToken) {
 const port = PORT || 8080;
 
 app.post('/', (req, res) => {
-    // console.log('RESPONSE', res)
+    console.log('RESPONSE', res)
     // const result = commandParser(req.body);
 
     if (req.body.text.includes('home')) {
@@ -31,7 +31,7 @@ app.post('/', (req, res) => {
     }else if (req.body.text.includes('office')) {
         res.json({
             response_type: 'ephemeral',
-            text: 'I\'ve marked you as working from the office. Enjoy your day!',
+            text: 'I\'ve marked you as working from the office. Have fun!',
         });
     }
 });
