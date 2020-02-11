@@ -35,4 +35,5 @@ TODO
 
 STRETCH
 1. View reports on old data
-2. view averages etc
+2. View averages etc
+3. Auto /wf status (for recurring events)
