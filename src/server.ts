@@ -27,11 +27,12 @@ app.post('/', (req, res) => {
         res.json({
             response_type: 'ephemeral',
             text: 'I\'ve marked you as working from home. Enjoy your day!',
-        })else if (req.body.text.includes('office')) {
+        })
+    }else if (req.body.text.includes('office')) {
         res.json({
             response_type: 'ephemeral',
             text: 'I\'ve marked you as working from the office. Enjoy your day!',
-        }
+        });
     }
 });
 
