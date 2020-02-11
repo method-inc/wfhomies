@@ -1,3 +1,4 @@
+DONE
 1. Created a slack app from developer.slack.com
 2. Creating a heroku instance for our webhook -> https://wfhomies.herokuapp.com/
 3. Create a github repo -> https://github.com/Skookum/wfhomies
@@ -7,31 +8,25 @@
 7. Initialized npm
 8. Installed packages npm i body-parser express request-promise-native string-tokenizer url-regex
 9. Created our server.js
-10. Created supporting submodules (slashCommand, handleStatus, commandParser)
-11. Created our express server
-12. Created start script, ran it, express server works
-13. Deployed to heroku, monitored in local cli using `heroku logs --tail --app wfhomies`
-14. Our express server is correctly logging requests from our slash command!
-15. Return a response to the client (slack) with res.send()
-16. Added eslint to enforce code quality in the editor
-17. Removed extra files, lets modularize as we go
-18. Converted to Typescript!  Use `npm run build:watch` to continually build as you go.  Final build output is now in the `dist/` directory.
-19. Changed eslint to typescript-eslint.  Changed eslint options to reflect that.
+10. Created our express server
+11. Created start script, ran it, express server works
+12. Deployed to heroku, monitored in local cli using `heroku logs --tail --app wfhomies`
+13. Our express server is correctly logging requests from our slash command!
+14. Return a response to the client (slack) with res.send()
+15. Added eslint to enforce code quality in the editor
+16. Removed extra files, lets modularize as we go
+17. Converted to Typescript!  Use `npm run build:watch` to continually build as you go.  Final build output is now in the `dist/` directory.
+18. Changed eslint to typescript-eslint.  Changed eslint options to reflect that.
 
 TODO
-
-20. ◻️ Pick a database to host data
-21. ◻️ Post to the database
-22. ◻️ Pull from the database
-23. ◻️ Show that data in slackbot
-24. ◻️ Make it pretty
-25. ◻️ Get the Web view working via github pages (placeholder html something something)
-26. ◻️ Build web view to show today's data
-27. ◻️ Scroll through prev days data
-28. ◻️ 
-
-
-
+1. ◻️ Pick a database to host data
+2. ◻️ Post to the database
+3. ◻️ Pull from the database
+5. ◻️ Show that data in slackbot
+6. ◻️ Make it pretty
+7. ◻️ Get the Web view working via github pages (placeholder html something something)
+8. ◻️ Build web view to show today's data
+9. ◻️ Scroll through prev days data 
 
 STRETCH
 1. View reports on old data
