@@ -1,7 +1,6 @@
 import express from 'express';
-
-const bodyParser = require('body-parser');
-const dotenv = require('dotenv');
+import bodyParser from 'body-parser';
+import dotenv from 'dotenv';
 
 dotenv.config();
 

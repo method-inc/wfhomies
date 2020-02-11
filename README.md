@@ -2,6 +2,8 @@
 
 ##Design Plan
 
+>🎨 Product Diagram -> [Whimsical](https://whimsical.com/MtX5p4CFbW7UZLYPX79Ysw)
+
 slash command
 posts to a db
 `/wf home|remote` `/wf office`
