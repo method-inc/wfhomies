@@ -1,7 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
-import { MongoClient as db } from 'mongodb';
 
 dotenv.config();
 
