@@ -38,19 +38,19 @@ app.post('/', (req, res) => {
         case 'remote':
             res.json({
                 response_type: 'ephemeral',
-                text: ':snowboarder: I\'ve marked you as working remotely. Have fun!',
+                text: ':snowboarder: I\'ve marked you as working remotely. Wherever you are, hope you\'re well!',
             });
             break;
         case 'everyone':
             res.json({
                 response_type: 'ephemeral',
-                text: ':skookum: This will eventually return a list of where everyone is at',
+                text: ':skookum: This will eventually return a list of where everyone is working from today',
             });
             break;
         default:
             res.json({
                 response_type: 'ephemeral',
-                text: ':question: Sorry, I didn\'t get that. Try /wf home, /wf office, /wf remote, or /wf everyone.',
+                text: ':question: Sorry, I didn\'t get that. Try `/wf home`, `/wf office`, `/wf remote`, or `/wf everyone`.',
             });
             break;
     }
