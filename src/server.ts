@@ -22,17 +22,37 @@ const port = PORT || 8080;
 app.post('/', (req, res) => {
     console.log('RESPONSE', res)
     // const result = commandParser(req.body);
-
-    if (req.body.text.includes('home')) {
-        res.json({
-            response_type: 'ephemeral',
-            text: ':derelict_house_building: I\'ve marked you as working from home. Enjoy your day!',
-        })
-    }else if (req.body.text.includes('office')) {
-        res.json({
-            response_type: 'ephemeral',
-            text: ':office: I\'ve marked you as working from the office. Have fun!',
-        });
+    switch (req.body.text) {
+        case 'home':
+            res.json({
+                response_type: 'ephemeral',
+                text: ':house_with_garden: I\'ve marked you as working from home. Enjoy your day!',
+            });
+            break;
+        case 'office':
+            res.json({
+                response_type: 'ephemeral',
+                text: ':office: I\'ve marked you as working from the office. Have fun!',
+            });
+            break;
+        case 'remote':
+            res.json({
+                response_type: 'ephemeral',
+                text: ':snowboarder: I\'ve marked you as working remotely. Have fun!',
+            });
+            break;
+        case 'everyone':
+            res.json({
+                response_type: 'ephemeral',
+                text: ':skookum: This will eventually return a list of where everyone is at',
+            });
+            break;
+        default:
+            res.json({
+                response_type: 'ephemeral',
+                text: ':question: Sorry, I didn\'t get that. Try /wf home, /wf office, /wf remote, or /wf everyone.',
+            });
+            break;
     }
 });
 
