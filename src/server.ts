@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
+import fetch from 'node-fetch';
 
 dotenv.config();
 
@@ -18,6 +19,21 @@ if (!slackToken) {
 
 const port = PORT || 8080;
 
+const postToDb = (data) => {
+    console.log(data);
+    fetch('https://wfhomies.firebaseio.com/users.json', {
+        method: 'POST', // or 'PUT'
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    });
+};
+
+// const getDailyLog = () => {
+
+// }
+
 app.post('/', (req, res) => {
     console.log('RESPONSE', res);
     // const result = commandParser(req.body);
@@ -27,6 +43,7 @@ app.post('/', (req, res) => {
             response_type: 'ephemeral',
             text: ':house_with_garden: I\'ve marked you as working from home. Enjoy your day!',
         });
+        postToDb(req.body);
     } else if (req.body.text.includes('office')) {
         res.json({
             response_type: 'ephemeral',
