@@ -1,3 +1,5 @@
+import fetch from 'node-fetch';
+
 export const postToDb = (data: object) => {
     console.log('_____________');
     console.log('postToDb Output');
