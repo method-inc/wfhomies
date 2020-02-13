@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import fetch from 'node-fetch';
 import * as admin from 'firebase-admin';
+import { postToDb } from './services';
 
 dotenv.config();
 
@@ -19,24 +20,6 @@ if (!slackToken) {
 }
 
 const port = PORT || 8080;
-
-const postToDb = (data: object) => {
-    console.log('_____________');
-    console.log('postToDb Output')
-    console.log(data);
-    console.log('_____________');
-    fetch('https://wfhomies.firebaseio.com/users.json', {
-        method: 'POST', // or 'PUT'
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    });
-};
-
-// const getDailyLog = () => {
-
-// }
 
 app.post('/', (req, res) => {
     console.log('RESPONSE', res);
