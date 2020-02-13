@@ -17,6 +17,9 @@ DONE
 16. Removed extra files, lets modularize as we go
 17. Converted to Typescript!  Use `npm run build:watch` to continually build as you go.  Final build output is now in the `dist/` directory.
 18. Changed eslint to typescript-eslint.  Changed eslint options to reflect that.
+19. Added conditionals to `server.ts` to cover the `home`, `office`, `remote`, and `everyone` commands, as well as any errors.
+20. Created a Firebase account and Firebase DB schema for `Users`.
+21. Added `postToDb` function to send the json from Slack to Firebase.
 
 TODO
 1. ◻️ Pick a database to host data
