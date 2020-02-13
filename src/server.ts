@@ -20,7 +20,10 @@ if (!slackToken) {
 const port = PORT || 8080;
 
 const postToDb = (data: object) => {
+    console.log('_____________');
+    console.log('postToDb Output')
     console.log(data);
+    console.log('_____________');
     fetch('https://wfhomies.firebaseio.com/users.json', {
         method: 'POST', // or 'PUT'
         headers: {
