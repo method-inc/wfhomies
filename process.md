@@ -22,7 +22,7 @@ DONE
 21. Added `postToDb` function to send the json from Slack to Firebase.
 
 TODO
-1. ◻️ Pick a database to host data
+1. X Pick a database to host data
 2. ◻️ Post to the database
 3. ◻️ Pull from the database
 5. ◻️ Show that data in slackbot
