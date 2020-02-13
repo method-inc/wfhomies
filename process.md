@@ -19,17 +19,17 @@ DONE
 18. Changed eslint to typescript-eslint.  Changed eslint options to reflect that.
 19. Added conditionals to `server.ts` to cover the `home`, `office`, `remote`, and `everyone` commands, as well as any errors.
 20. Created a Firebase account and Firebase DB schema for `Users`.
-21. Added `postToDb` function to send the json from Slack to Firebase.
+21. `postToDb` function to send the json from Slack to Firebase.
+22. Created `services.ts` file to handle REST api functions, and moved over `postToDb()`.
 
 TODO
-1. X Pick a database to host data
-2. ◻️ Post to the database
-3. ◻️ Pull from the database
-5. ◻️ Show that data in slackbot
-6. ◻️ Make it pretty
-7. ◻️ Get the Web view working via github pages (placeholder html something something)
-8. ◻️ Build web view to show today's data
-9. ◻️ Scroll through prev days data 
+1. ◻️ Post to the database
+2. ◻️ Pull from the database
+3. ◻️ Show that data in slackbot
+4. ◻️ Make it pretty
+5. ◻️ Get the Web view working via github pages (placeholder html something something)
+6. ◻️ Build web view to show today's data
+7. ◻️ Scroll through prev days data 
 
 STRETCH
 1. View reports on old data
