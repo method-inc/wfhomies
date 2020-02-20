@@ -21,6 +21,7 @@ DONE
 20. Created a Firebase account and Firebase DB schema for `Users`.
 21. `postToDb` function to send the json from Slack to Firebase.
 22. Created `services.ts` file to handle REST api functions, and moved over `postToDb()`.
+23. Decided to scrap Firebase. Removed associated files.
 
 TODO
 1. ◻️ Post to the database

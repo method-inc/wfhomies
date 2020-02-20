@@ -5,7 +5,7 @@ export const postToDb = (data: object) => {
     console.log('postToDb Output');
     console.log(data);
     console.log('_____________');
-    fetch('https://wfhomies.firebaseio.com/users.json', {
+    fetch('insert URL here', {
         method: 'POST', // or 'PUT'
         headers: {
             'Content-Type': 'application/json',
