@@ -8,7 +8,8 @@
     "lint": "eslint src/** --fix && tsc --noEmit",
     "build": "tsc",
     "build:watch": "tsc -w",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "heroku": "heroku logs --tail --app wfhomies"
   },
   "repository": {
     "type": "git",
