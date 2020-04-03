@@ -30,7 +30,7 @@ TODO
 2. ◻️ Pull from the database
 3. ◻️ Show that data in slackbot
 4. ◻️ Make it pretty
-5. ◻️ Fix Heroku error on first command of the day
+5. ◻️ Fix Heroku timeout error (usually on first command of the day)
 6. ◻️ Get the Web view working via github pages (placeholder html something something)
 7. ◻️ Build web view to show today's data
 8. ◻️ Scroll through prev days data
